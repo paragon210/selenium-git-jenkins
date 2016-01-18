@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [CBS_TestSuite]" parallel="tests">
+  <parameter name="browserType" value="firefox"/>
+  <test name="CBS_Homepage_Chrome(failed)" parallel="tests">
+    <parameter name="browserType" value="chrome"/>
+    <classes>
+      <class name="com.cbs.testsuite.SearchResults_Test">
+        <methods>
+          <include name="testSearchPage"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.cbs.testsuite.SearchResults_Test -->
+      <class name="com.cbs.testsuite.CBS_TC_SUITE_Test">
+        <methods>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="beforeMethod"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.cbs.testsuite.CBS_TC_SUITE_Test -->
+    </classes>
+  </test> <!-- CBS_Homepage_Chrome(failed) -->
+  <test name="CBS_Homepage_Firefox(failed)" parallel="tests">
+    <parameter name="browserType" value="firefox"/>
+    <classes>
+      <class name="com.cbs.testsuite.SearchResults_Test">
+        <methods>
+          <include name="testSearchPage"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.cbs.testsuite.SearchResults_Test -->
+      <class name="com.cbs.testsuite.CBS_TC_SUITE_Test">
+        <methods>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="beforeMethod"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.cbs.testsuite.CBS_TC_SUITE_Test -->
+    </classes>
+  </test> <!-- CBS_Homepage_Firefox(failed) -->
+</suite> <!-- Failed suite [CBS_TestSuite] -->

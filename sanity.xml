@@ -1,0 +1,35 @@
+<suite name="CBS_TestSuite" parallel="tests">
+	<test name="CBS_Homepage_Chrome" preserve-order="true" allow-return-values="true" >
+	<!-- <groups>
+	<run>
+	  <include name="regression"/>
+	</run>
+	</groups>  -->
+	<parameter name="browserType" value="chrome"/>
+		<classes>
+		<class name="com.cbs.testsuite.CBS_TC_SUITE_Test">
+		<method>
+				<include name="testNav"/> 
+				<include name="menuItemListsTest"/>
+			</method> 
+		</class>
+		</classes>
+	</test>
+	<test name="CBS_Homepage_Firefox" preserve-order="true" allow-return-values="true">
+	<!-- <groups>
+	<run>
+	  <include name="regression"/>
+	</run>
+	</groups>  -->
+	<parameter name="browserType" value="firefox"/>
+		<classes>
+		<class name="com.cbs.testsuite.CBS_TC_SUITE_Test">
+		<method>
+				<include name="testNav"/> 
+				<include name="menuItemListsTest"/>
+			</method> 
+		</class>
+		</classes>
+	</test>
+	
+</suite>
