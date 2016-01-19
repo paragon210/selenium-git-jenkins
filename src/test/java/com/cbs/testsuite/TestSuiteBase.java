@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
 import page.objects.Cbs_HomepageObject;
@@ -29,5 +30,10 @@ public class TestSuiteBase {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get(homepage.getBaseUrl());
+	}
+	
+	@AfterClass(alwaysRun=true)
+	public void tearDown() {
+		driver.quit();
 	}
 }

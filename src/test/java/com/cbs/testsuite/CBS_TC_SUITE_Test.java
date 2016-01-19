@@ -2,51 +2,19 @@ package com.cbs.testsuite;
 
 import org.testng.annotations.Test;
 
-import page.objects.Cbs_HomepageObject;
-import page.objects.Cbs_SearchpageObject;
-
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Parameters;
-
 import java.io.IOException;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.WebDriver;
+
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import utilities.Screenshots;
 
 public class CBS_TC_SUITE_Test extends TestSuiteBase{
-	/*private WebDriver driver;
-	private Actions actions;
-	private WebDriverWait wait;
-	private Cbs_HomepageObject homepage;
-	private Cbs_SearchpageObject searchpage;
-	
-	public WebDriver getDriver(){
-		return driver;
-	}
-	//@Parameters("browserType")
-	@BeforeClass
-	public void setUp() {
-		driver = new FirefoxDriver();
-		actions = new Actions(driver);
-		wait = new WebDriverWait(driver,30);
-		homepage = new Cbs_HomepageObject();
-		searchpage = new Cbs_SearchpageObject();
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.get(homepage.getBaseUrl());
-	  } */
+
 	  
   @Test(groups = { "regression" }, dependsOnMethods = { "testNav" })
 	public void menuItemListsTest() throws InterruptedException{
@@ -89,28 +57,6 @@ public class CBS_TC_SUITE_Test extends TestSuiteBase{
         }     
     }
  
-	/*@Test
-	public void searchPageTest(){
-		//driver.get(homepage.getBaseUrl());
-		
-		//Click the search icon on the home page
-		wait.until(ExpectedConditions.visibilityOf(homepage.getImgClassElement(driver)));
-		homepage.clickSearchIcon(driver, actions);
-		
-		//Wait for the page to load and the search box to appear. Enter the search term and click the search button.
-		//TODO add auto complete check functionality
-		wait.until(ExpectedConditions.visibilityOf(homepage.getImgClassElement(driver)));
-		searchpage.enterSearchTerm(driver, actions);
-		searchpage.clickSearchButton(driver, actions);
-		//driver.quit();
-		
-	} */
-
-
-  @AfterClass
-  public void afterMethod() {
-    driver.quit();
-  }
   
   @AfterMethod
   public void tearDown(ITestResult testResult) throws IOException{

@@ -20,23 +20,23 @@
       <![CDATA[]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="26950" started-at="2016-01-19T00:02:11Z" finished-at="2016-01-19T00:02:38Z">
+  <suite name="Default suite" duration-ms="27204" started-at="2016-01-19T16:12:58Z" finished-at="2016-01-19T16:13:25Z">
     <groups>
       <group name="nightly">
-        <method signature="CBS_TC_SUITE_Test.testNav()[pri:0, instance:com.cbs.testsuite.CBS_TC_SUITE_Test@19dfb72a]" name="testNav" class="com.cbs.testsuite.CBS_TC_SUITE_Test"/>
+        <method signature="CBS_TC_SUITE_Test.testNav()[pri:0, instance:com.cbs.testsuite.CBS_TC_SUITE_Test@17c68925]" name="testNav" class="com.cbs.testsuite.CBS_TC_SUITE_Test"/>
       </group> <!-- nightly -->
       <group name="regression">
-        <method signature="CBS_TC_SUITE_Test.testNav()[pri:0, instance:com.cbs.testsuite.CBS_TC_SUITE_Test@19dfb72a]" name="testNav" class="com.cbs.testsuite.CBS_TC_SUITE_Test"/>
-        <method signature="CBS_TC_SUITE_Test.menuItemListsTest()[pri:0, instance:com.cbs.testsuite.CBS_TC_SUITE_Test@19dfb72a]" name="menuItemListsTest" class="com.cbs.testsuite.CBS_TC_SUITE_Test"/>
+        <method signature="CBS_TC_SUITE_Test.testNav()[pri:0, instance:com.cbs.testsuite.CBS_TC_SUITE_Test@17c68925]" name="testNav" class="com.cbs.testsuite.CBS_TC_SUITE_Test"/>
+        <method signature="CBS_TC_SUITE_Test.menuItemListsTest()[pri:0, instance:com.cbs.testsuite.CBS_TC_SUITE_Test@17c68925]" name="menuItemListsTest" class="com.cbs.testsuite.CBS_TC_SUITE_Test"/>
       </group> <!-- regression -->
     </groups>
-    <test name="Default test" duration-ms="26950" started-at="2016-01-19T00:02:11Z" finished-at="2016-01-19T00:02:38Z">
+    <test name="Default test" duration-ms="27204" started-at="2016-01-19T16:12:58Z" finished-at="2016-01-19T16:13:25Z">
       <class name="com.cbs.testsuite.CBS_TC_SUITE_Test">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.cbs.testsuite.CBS_TC_SUITE_Test@19dfb72a]" name="setUp" is-config="true" duration-ms="6792" started-at="2016-01-18T19:02:11Z" finished-at="2016-01-18T19:02:18Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.cbs.testsuite.CBS_TC_SUITE_Test@17c68925]" name="setUp" is-config="true" duration-ms="6782" started-at="2016-01-19T11:12:58Z" finished-at="2016-01-19T11:13:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testNav()[pri:0, instance:com.cbs.testsuite.CBS_TC_SUITE_Test@19dfb72a]" name="testNav" duration-ms="18352" started-at="2016-01-18T19:02:18Z" finished-at="2016-01-18T19:02:37Z">
+        <test-method status="PASS" signature="testNav()[pri:0, instance:com.cbs.testsuite.CBS_TC_SUITE_Test@17c68925]" name="testNav" duration-ms="18468" started-at="2016-01-19T11:13:05Z" finished-at="2016-01-19T11:13:23Z">
           <reporter-output>
             <line>
               <![CDATA[Verifying the actual value with the expected value]]>
@@ -58,33 +58,37 @@
             </line>
           </reporter-output>
         </test-method> <!-- testNav -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.cbs.testsuite.CBS_TC_SUITE_Test@19dfb72a]" name="tearDown" is-config="true" duration-ms="0" started-at="2016-01-18T19:02:37Z" finished-at="2016-01-18T19:02:37Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.cbs.testsuite.CBS_TC_SUITE_Test@17c68925]" name="tearDown" is-config="true" duration-ms="1" started-at="2016-01-19T11:13:23Z" finished-at="2016-01-19T11:13:23Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testNav status=SUCCESS method=CBS_TC_SUITE_Test.testNav()[pri:0, instance:com.cbs.testsuite.CBS_TC_SUITE_Test@19dfb72a] output=Verifying the actual value with the expected value]]]>
+                <![CDATA[[TestResult name=testNav status=SUCCESS method=CBS_TC_SUITE_Test.testNav()[pri:0, instance:com.cbs.testsuite.CBS_TC_SUITE_Test@17c68925] output=Verifying the actual value with the expected value]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="menuItemListsTest()[pri:0, instance:com.cbs.testsuite.CBS_TC_SUITE_Test@19dfb72a]" name="menuItemListsTest" duration-ms="1217" started-at="2016-01-18T19:02:37Z" depends-on-methods="com.cbs.testsuite.CBS_TC_SUITE_Test.testNav" finished-at="2016-01-18T19:02:38Z">
+        <test-method status="PASS" signature="menuItemListsTest()[pri:0, instance:com.cbs.testsuite.CBS_TC_SUITE_Test@17c68925]" name="menuItemListsTest" duration-ms="1284" started-at="2016-01-19T11:13:23Z" depends-on-methods="com.cbs.testsuite.CBS_TC_SUITE_Test.testNav" finished-at="2016-01-19T11:13:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- menuItemListsTest -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.cbs.testsuite.CBS_TC_SUITE_Test@19dfb72a]" name="afterMethod" is-config="true" duration-ms="580" started-at="2016-01-18T19:02:38Z" finished-at="2016-01-18T19:02:38Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.cbs.testsuite.CBS_TC_SUITE_Test@17c68925]" name="afterMethod" is-config="true" duration-ms="658" started-at="2016-01-19T11:13:24Z" finished-at="2016-01-19T11:13:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.cbs.testsuite.CBS_TC_SUITE_Test@19dfb72a]" name="tearDown" is-config="true" duration-ms="0" started-at="2016-01-18T19:02:38Z" finished-at="2016-01-18T19:02:38Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.cbs.testsuite.CBS_TC_SUITE_Test@17c68925]" name="tearDown" is-config="true" duration-ms="0" started-at="2016-01-19T11:13:24Z" finished-at="2016-01-19T11:13:24Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=menuItemListsTest status=SUCCESS method=CBS_TC_SUITE_Test.menuItemListsTest()[pri:0, instance:com.cbs.testsuite.CBS_TC_SUITE_Test@19dfb72a] output={null}]]]>
+                <![CDATA[[TestResult name=menuItemListsTest status=SUCCESS method=CBS_TC_SUITE_Test.menuItemListsTest()[pri:0, instance:com.cbs.testsuite.CBS_TC_SUITE_Test@17c68925] output={null}]]]>
               </value>
             </param>
           </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.cbs.testsuite.CBS_TC_SUITE_Test@17c68925]" name="tearDown" is-config="true" duration-ms="0" started-at="2016-01-19T11:13:25Z" finished-at="2016-01-19T11:13:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
