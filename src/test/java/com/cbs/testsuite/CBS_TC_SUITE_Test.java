@@ -25,8 +25,8 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import utilities.Screenshots;
 
-public class CBS_TC_SUITE_Test {
-	private WebDriver driver;
+public class CBS_TC_SUITE_Test extends TestSuiteBase{
+	/*private WebDriver driver;
 	private Actions actions;
 	private WebDriverWait wait;
 	private Cbs_HomepageObject homepage;
@@ -37,7 +37,7 @@ public class CBS_TC_SUITE_Test {
 	}
 	//@Parameters("browserType")
 	@BeforeClass
-	public void beforeMethod() {
+	public void setUp() {
 		driver = new FirefoxDriver();
 		actions = new Actions(driver);
 		wait = new WebDriverWait(driver,30);
@@ -46,7 +46,7 @@ public class CBS_TC_SUITE_Test {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get(homepage.getBaseUrl());
-	  }
+	  } */
 	  
   @Test(groups = { "regression" }, dependsOnMethods = { "testNav" })
 	public void menuItemListsTest() throws InterruptedException{
