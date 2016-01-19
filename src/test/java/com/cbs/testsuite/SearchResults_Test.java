@@ -36,7 +36,6 @@ public class SearchResults_Test {
 	
 	@Test
 	public void testSearchPage(){
-		//driver.get(homepage.getBaseUrl());
 		
 		//Click the search icon on the home page
 		wait.until(ExpectedConditions.visibilityOf(homepage.getImgClassElement(driver)));
@@ -47,9 +46,7 @@ public class SearchResults_Test {
 		//wait.until(ExpectedConditions.visibilityOf(homepage.getImgClassElement(driver)));
 		wait.until(ExpectedConditions.visibilityOf(searchpage.getSearchBox(driver)));
 		searchpage.enterSearchTerm(driver, actions);
-		searchpage.clickSearchButton(driver, actions);
-		
-		
+		searchpage.clickSearchButton(driver, actions);		
 	}
 	
 	@AfterTest
